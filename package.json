@@ -1,0 +1,22 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "express",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuba2006/Node-1.git"
+  },
+  "author": "Jakub Myrta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkuba2006/Node-1/issues"
+  },
+  "homepage": "https://github.com/mkuba2006/Node-1#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
