@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mkuba2006/Node-1#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "pstree.remy": "^1.1.0"
   }
 }
