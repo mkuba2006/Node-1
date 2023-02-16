@@ -2,7 +2,7 @@
   "name": "npm",
   "version": "1.0.0",
   "description": "express",
-  "main": "calculator.js",
+  "main": "weather_Node1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/mkuba2006/Node-1#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
+    "eslint": "^8.34.0",
     "express": "^4.18.2"
   },
   "devDependencies": {
