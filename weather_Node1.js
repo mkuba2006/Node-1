@@ -11,13 +11,7 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
   const query = "London";
   const apiKey = "bac4d6f49f6003758de5ba6a0a8ba5a7";
-  const url =
-    "api.openweathermap.org/data/2.5/weather?q=" +
-    query +
-    "&appid=" +
-    api +
-    "&units=metric";
-
+  const url = "api.openweathermap.org/data/2.5/weather?q="+ query +"&appid=" + apiKey +"&units=metric";
   https.get(url, function (response) {
     console.log(response.status);
     response.on("data", function () {
@@ -25,8 +19,7 @@ app.post("/", function (req, res) {
       const temp = weatherData.main.temp;
       const weatherD = weather.main.description;
       const weatherIcon = weather.main[0].icon;
-      const WeatherIMG =
-        "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
+      const WeatherIMG = "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
       res.write("<p>Weather is" + weatherD + "</p>");
       res.write("<p>Temperature is" + temp + "</p>");
       res.write("<img>" + WeatherIMG + "</img>");
